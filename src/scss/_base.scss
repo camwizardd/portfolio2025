@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  display: block;
+}
+
+:root {
+  --electrik-blue: #002bff;
+  --dark-blue: #091147;
+  --white: #fff;
+}
+
+body {
+  color: var(--dark-blue);
+  font-size: 18px;
+}
