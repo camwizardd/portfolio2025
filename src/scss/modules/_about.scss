@@ -1,0 +1,24 @@
+.about-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 160px;
+  .about-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about-main {
+  width: 100%;
+  padding: 0 45px 100px 45px;
+}
+
+.about-description {
+  text-align: justify;
+  font-size: 15px;
+  color: var(--dark-blue);
+}
