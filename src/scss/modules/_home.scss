@@ -1,0 +1,19 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  .home-guy-text-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+  .home-arrow-wrapper {
+    width: 75%;
+    display: flex;
+    justify-content: end;
+  }
+}
