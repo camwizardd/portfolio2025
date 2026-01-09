@@ -17,8 +17,35 @@
   padding: 0 45px 100px 45px;
 }
 
+.about-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 37px;
+  align-self: stretch;
+}
+
 .about-description {
   text-align: justify;
   font-size: 15px;
   color: var(--dark-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about-cv {
+  display: flex;
+  align-items: flex-end;
+  gap: 11px;
+  .about-cv-link {
+    font-size: 12px;
+  }
+}
+
+.about-socials {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 12px;
 }
