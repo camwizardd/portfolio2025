@@ -9,6 +9,7 @@ header.fr {
   left: 0;
   background: var(--white);
   backdrop-filter: blur(45px);
+  z-index: 1000;
   .header-spacer {
     width: 62px;
     height: 2px;

@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 // BURGER MENU----------------------------------------------------------------------------------------------------------------------
 
 var burger = document.querySelector(".header-burger");
@@ -8,3 +10,12 @@ function toggleMenu() {
 }
 
 burger.addEventListener("click", toggleMenu);
+
+gsap.to(".header-burger", {
+  repeat: -1,
+  duration: 10,
+  delay: 0,
+  // stagger:1,
+  // yoyo: true,
+  rotation: -360,
+});
