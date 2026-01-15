@@ -16,3 +16,15 @@
     justify-content: end;
   }
 }
+
+@media (min-width: 768px) {
+  .home-text-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text-desktop {
+    display: none;
+  }
+}
