@@ -1,0 +1,90 @@
+.detail-project-main {
+  .detail-project {
+    padding-top: 200px;
+  }
+  .detail-project-infos-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 79px 46px 115px 46px;
+    .detail-project-infos-container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .detail-project-credits {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        .detail-project-credits-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 16px;
+          text-align: right;
+        }
+        .detail-project-credits-left {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 16px;
+        }
+      }
+    }
+    .detail-project-title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+    }
+    .detail-project-description-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      text-align: justify;
+    }
+  }
+}
+
+.italic {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.detail-project-parallax {
+  padding: 60px 46px 60px 46px;
+  .detail-project-parallax-img1 {
+    display: flex;
+    flex-direction: column;
+    gap: 197px;
+    padding-top: 93px;
+    img {
+      width: 100%;
+    }
+  }
+  .detail-project-parallax-img2 {
+    display: flex;
+    flex-direction: column;
+    gap: 127px;
+    padding-top: 93px;
+    img {
+      width: 100%;
+    }
+  }
+  .detail-project-parallax-img3 {
+    display: flex;
+    flex-direction: column;
+    gap: 116px;
+    padding-top: 28px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.detail-project-back {
+  display: flex;
+  width: 100%;
+  padding: 0 46px 115px 46px;
+  justify-content: end;
+}

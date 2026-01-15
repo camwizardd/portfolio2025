@@ -1,0 +1,11 @@
+.kitty-main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.kitty-img {
+  cursor: pointer;
+}

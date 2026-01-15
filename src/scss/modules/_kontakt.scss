@@ -1,0 +1,55 @@
+.kontakt-main {
+  padding: 200px 45px 38px 45px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .kontakt-link-wrapper {
+    position: relative;
+    .kontakt-text-wrapper,
+    .kontakt-link {
+      padding-top: 92px;
+      display: flex;
+      flex-direction: column;
+      gap: 88px;
+    }
+    .kontakt-link-container {
+      position: absolute;
+      top: 20;
+      right: 0;
+      text-align: right;
+    }
+    .kontakt-drawings-ou {
+      position: absolute;
+      top: 140;
+      left: -20;
+    }
+    .kontakt-link {
+      position: relative;
+    }
+    .kontakt-drawings-mail {
+      position: absolute;
+      top: 60;
+      right: 0;
+    }
+
+    .kontakt-drawings-switch {
+      position: absolute;
+      top: 120;
+      right: 60;
+    }
+    .kontakt-drawings-tel {
+      position: absolute;
+      top: 120;
+      right: 0;
+    }
+  }
+}
+
+.kontakt-credits {
+  width: 100%;
+  p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
