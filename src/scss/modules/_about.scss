@@ -27,7 +27,7 @@
 
 .about-description {
   text-align: justify;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: var(--dark-blue);
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
   align-items: flex-end;
   gap: 11px;
   .about-cv-link {
-    font-size: 15px;
+    font-size: 0.9rem;
   }
 }
 
@@ -64,7 +64,8 @@
 
 @media (min-width: 768px) {
   .about-img {
-    width: 40%;
+    min-width: 30%;
+    max-width: 40%;
   }
 }
 @media (min-width: 768px) {
@@ -78,26 +79,53 @@
 
 @media (min-width: 768px) {
   .about-container {
-    padding: 0 300px;
+    padding: 0 100px 0 300px;
   }
 }
 
 @media (min-width: 768px) {
   .about-description {
     font-size: 1.3rem;
+    gap: 30px;
+    max-width: 600px;
   }
 }
 
 @media (min-width: 768px) {
   .about-description-wrapper {
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
   }
 }
 
 @media (min-width: 768px) {
   .about-socials {
     flex-direction: column;
+    height: 150px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-cv .about-cv-link {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-cv {
+    gap: 29px;
+    align-items: end;
     height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-cv-arrow {
+    transform: scale(2.5);
+    padding-left: 5px;
+    padding-bottom: 8px;
   }
 }

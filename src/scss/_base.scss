@@ -39,10 +39,17 @@ a {
 
 .text-link {
   font-style: italic;
+  font-size: 09rem;
   text-decoration-line: underline;
   color: var(--electrik-blue);
   text-decoration-thickness: 6.5%;
   text-underline-offset: 9%;
+}
+
+@media (min-width: 768px) {
+  .text-link {
+    font-size: 1.3rem;
+  }
 }
 
 // .row + .row {
