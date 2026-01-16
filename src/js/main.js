@@ -81,10 +81,32 @@ document.addEventListener("DOMContentLoaded", function () {
     inertia: true,
     dragClickables: false,
   });
-  Draggable.create(".header-cat", {
-    type: "rotation",
+  Draggable.create(".home-silly-guy", {
+    bounds: ".home",
     inertia: true,
+    onThrowComplete: function () {
+      gsap.to(this.target, {
+        x: 0,
+        y: 0,
+        duration: 0.6,
+        ease: "elastic.out(1, 0.4)",
+      });
+    },
   });
+  Draggable.create(
+    ".header-cat, .header-icon-portfolio, .kontakt-drawings-banana, .kontakt-drawings-mail, .kontakt-drawings-tel",
+    {
+      type: "rotation",
+      inertia: true,
+      onThrowComplete: function () {
+        gsap.to(this.target, {
+          rotation: 0,
+          duration: 0.6,
+          ease: "elastic.out(1, 0.4)",
+        });
+      },
+    }
+  );
   Draggable.create(".project-new-desktop-icon", {
     type: "rotation",
     inertia: true,
