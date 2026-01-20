@@ -124,6 +124,14 @@ header.fr.header-desktop {
   }
 }
 
+.header-menu a {
+  transition: transform 0.3s ease;
+}
+
+.header-menu a:hover {
+  transform: skew(-45deg);
+}
+
 @media (min-width: 768px) {
   header.fr.header-mobile {
     display: none;

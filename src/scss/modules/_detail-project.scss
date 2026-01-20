@@ -1,4 +1,98 @@
-.detail-project-main {
+.detail-project-mobile {
+  .detail-project {
+    padding-top: 200px;
+    iframe {
+      width: 100%;
+      height: 250px;
+    }
+  }
+  .detail-project-infos-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding: 79px 46px 115px 46px;
+    .detail-project-infos-container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      .detail-project-credits {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: stretch;
+        .detail-project-credits-right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 16px;
+          text-align: right;
+        }
+        .detail-project-credits-left {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 16px;
+        }
+      }
+    }
+    .detail-project-title-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+    }
+    .detail-project-description-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      text-align: justify;
+    }
+  }
+  .italic {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .detail-project-parallax {
+    padding: 60px 46px 60px 46px;
+    .detail-project-parallax-img1 {
+      display: flex;
+      flex-direction: column;
+      gap: 197px;
+      padding-top: 93px;
+      img {
+        width: 100%;
+      }
+    }
+    .detail-project-parallax-img2 {
+      display: flex;
+      flex-direction: column;
+      gap: 127px;
+      padding-top: 93px;
+      img {
+        width: 100%;
+      }
+    }
+    .detail-project-parallax-img3 {
+      display: flex;
+      flex-direction: column;
+      gap: 116px;
+      padding-top: 28px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .detail-project-back {
+    display: flex;
+    width: 100%;
+    padding: 0 46px 115px 46px;
+    justify-content: end;
+  }
+}
+
+.detail-project-desktop {
   .detail-project {
     padding-top: 200px;
   }
@@ -44,47 +138,63 @@
       text-align: justify;
     }
   }
-}
+  .italic {
+    font-style: italic;
+    font-size: 1rem;
+  }
 
-.italic {
-  font-style: italic;
-  font-size: 1rem;
-}
-
-.detail-project-parallax {
-  padding: 60px 46px 60px 46px;
-  .detail-project-parallax-img1 {
-    display: flex;
-    flex-direction: column;
-    gap: 197px;
-    padding-top: 93px;
-    img {
-      width: 100%;
+  .detail-project-parallax {
+    padding: 160px 46px 60px 46px;
+    position: fixed;
+    width: 36%;
+    .detail-project-parallax-img1 {
+      display: flex;
+      flex-direction: column;
+      gap: 267px;
+      padding-top: 93px;
+      img {
+        width: 80%;
+      }
+    }
+    .detail-project-parallax-img2 {
+      display: flex;
+      flex-direction: column;
+      gap: 127px;
+      padding-top: 93px;
+      img {
+        width: 80%;
+      }
+    }
+    .detail-project-parallax-img3 {
+      display: flex;
+      flex-direction: column;
+      gap: 116px;
+      padding-top: 28px;
+      img {
+        width: 80%;
+      }
     }
   }
-  .detail-project-parallax-img2 {
+
+  .detail-project-back {
     display: flex;
-    flex-direction: column;
-    gap: 127px;
-    padding-top: 93px;
-    img {
-      width: 100%;
-    }
-  }
-  .detail-project-parallax-img3 {
-    display: flex;
-    flex-direction: column;
-    gap: 116px;
-    padding-top: 28px;
-    img {
-      width: 100%;
-    }
+    width: 100%;
+    padding: 0 46px 115px 46px;
+    justify-content: end;
   }
 }
 
-.detail-project-back {
-  display: flex;
-  width: 100%;
-  padding: 0 46px 115px 46px;
-  justify-content: end;
+@media (min-width: 768px) {
+  .italic {
+    font-size: 1.3rem;
+  }
+  .detail-project-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail-project-desktop {
+    display: none;
+  }
 }

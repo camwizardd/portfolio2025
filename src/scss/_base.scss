@@ -33,17 +33,46 @@ body {
 
 a {
   text-decoration: none;
+  pointer-events: pointer;
+}
+
+::selection {
+  background-color: var(--electrik-blue);
+  color: var(--white);
+  -webkit-animation-fill-mode: var(--white);
 }
 
 // A REPLACER A QLQ PART
 
 .text-link {
   font-style: italic;
-  font-size: 09rem;
+  font-size: 0.9rem;
   text-decoration-line: underline;
   color: var(--electrik-blue);
   text-decoration-thickness: 6.5%;
   text-underline-offset: 9%;
+  pointer-events: pointer;
+}
+
+.link-container {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.link-container:hover {
+  transform: skew(-25deg);
+}
+
+.link-container2 {
+  transition: transform 0.3s ease;
+}
+
+.link-container2:hover {
+  transform: skewY(15deg);
+}
+
+.hover2:hover {
+  transform: skewY(-15deg);
 }
 
 @media (min-width: 768px) {

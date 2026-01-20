@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
   Draggable.create(
-    ".header-cat, .header-icon-portfolio, .kontakt-drawings-banana, .kontakt-drawings-mail, .kontakt-drawings-tel",
+    ".header-cat, .header-portfolio-icon-container, .kontakt-drawings-banana, .kontakt-drawings-mail, .kontakt-drawings-tel",
     {
       type: "rotation",
       inertia: true,
