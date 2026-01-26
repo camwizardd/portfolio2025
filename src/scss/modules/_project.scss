@@ -1,3 +1,7 @@
+// ============================================================
+// PROJECT MAIN - BASE (MOBILE FIRST)
+// ============================================================
+
 .project-main {
   height: 100%;
   width: 100vw;
@@ -5,36 +9,44 @@
   display: flex;
   flex-direction: column;
   gap: 17px;
+
   .project-new-mobile-icon {
     position: absolute;
-    right: -25;
-    bottom: 3265;
+    right: -25px;
+    bottom: 3265px;
   }
+
   .project-preview-wrapper {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
+
   .project-preview {
     display: flex;
-    padding-bottom: 10px;
+    padding: 15px 0 15px 10px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
     border-bottom: 1px solid var(--electrik-blue, #002bff);
     position: relative;
-    padding: 15px 0 15px 10px;
     transition: 0.1s ease-out;
+
+    // Images suivant la souris (desktop)
     video.swipeimage,
     img.swipeimage {
       height: auto;
       width: 20%;
       filter: grayscale(1);
     }
+
+    // Images affichées (mobile)
     img.mobileimg,
     video.mobileimg {
       width: 100%;
       filter: grayscale(1);
     }
+
     .project-infos {
       display: flex;
       justify-content: space-between;
@@ -42,37 +54,43 @@
       align-self: stretch;
       transition: 0.5s;
     }
+
+    // Background bleu au hover
     .project-preview-bg {
       z-index: -1;
       background-color: var(--electrik-blue);
       width: 40%;
       height: 100%;
       position: absolute;
-
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       opacity: 0;
       transition:
         width 0.5s ease-in-out,
         opacity 0.6s;
     }
   }
-  .project-preview-wrapper {
-    position: relative;
-  }
 }
+
+// ============================================================
+// DESKTOP (≥768px)
+// ============================================================
 
 @media (min-width: 768px) {
   .project-main {
     padding: 200px 250px 0 300px;
   }
+
   .mobileimg {
     display: none;
   }
+
   .project-new {
-    right: -30;
-    bottom: -50;
+    right: -30px;
+    bottom: -50px;
   }
+
+  // Images qui suivent la souris
   img.swipeimage,
   video.swipeimage {
     position: fixed;
@@ -85,41 +103,57 @@
     object-fit: cover;
     pointer-events: none;
   }
+
   .project-preview {
     display: inline-block;
+
+    // Effet hover
+    &:hover {
+      cursor: pointer;
+
+      .project-preview-bg {
+        width: 100%;
+        opacity: 1;
+      }
+
+      .project-infos {
+        color: var(--white, #fff);
+      }
+    }
   }
+
   .project-preview-wrapper {
     min-width: 520px;
   }
+
+  // Masque éléments mobile
   .project-title-mobile,
   .project-new-mobile-icon {
     display: none;
   }
+
   .project-infos {
     width: 520px;
   }
-  .project-preview:hover {
-    cursor: pointer;
-    .project-preview-bg {
-      width: 100%;
-      opacity: 1;
-    }
-    .project-infos {
-      color: var(--white, #fff);
-    }
-  }
+
   .project-new-desktop-icon {
     position: absolute;
-    right: -130;
-    top: -35;
+    right: -130px;
+    top: -35px;
   }
 }
 
+// ============================================================
+// MOBILE (≤768px)
+// ============================================================
+
 @media (max-width: 768px) {
+  // Masque éléments desktop
   .project-title-desktop,
   .project-new-desktop-icon {
     display: none;
   }
+
   .swipeimage {
     display: none;
   }
