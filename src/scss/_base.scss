@@ -36,6 +36,10 @@ a {
   pointer-events: pointer;
 }
 
+p {
+  cursor: default;
+}
+
 ::selection {
   background-color: #000;
   color: var(--white);
