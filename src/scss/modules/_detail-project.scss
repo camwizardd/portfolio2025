@@ -267,7 +267,7 @@
 // VERSION FULLPAGE MOBILE
 // ============================================================
 
-.detail-project-fullpage-mobile {
+.detail-project-fullpage {
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -289,16 +289,25 @@
 // ============================================================
 
 @media (min-width: 768px) {
+  .detail-project-fullpage {
+    padding: 0px 200px 100px 300px;
+  }
   .italic {
     font-size: 1.3rem;
   }
   .detail-project-mobile {
     display: none;
   }
+  .detail-project-back-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   .detail-project-desktop {
+    display: none;
+  }
+  .detail-project-back-desktop {
     display: none;
   }
 }
