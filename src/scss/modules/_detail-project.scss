@@ -5,10 +5,30 @@
 .detail-project-mobile {
   .detail-project {
     padding-top: 200px;
+    overflow: hidden;
     iframe {
       width: 100%;
       height: 250px;
     }
+    img {
+      width: 100%;
+    }
+  }
+  .detail-project-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .detail-project-slider-wrapper {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .detail-project-video {
+    width: 100%;
   }
 
   .detail-project-infos-wrapper {
@@ -35,6 +55,16 @@
       display: flex;
       flex-direction: column;
       gap: 60px;
+
+      .detail-project-link a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: fit-content;
+        p {
+          display: inline-block;
+        }
+      }
 
       .detail-project-credits {
         display: flex;
@@ -120,6 +150,14 @@
     align-items: center;
     justify-content: center;
     margin-right: 50px;
+    .detail-project-slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
   }
 
   // Grille d'images avec effet hover
@@ -222,6 +260,27 @@
     width: 100%;
     padding: 0 46px 0 46px;
     justify-content: end;
+  }
+}
+
+// ============================================================
+// VERSION FULLPAGE MOBILE
+// ============================================================
+
+.detail-project-fullpage-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: end;
+  padding-bottom: 100px;
+  .detail-project-back {
+    padding-right: 46px;
+  }
+  .fullpage-content-wrapper {
+    padding-top: 150px;
+  }
+  img {
+    width: 100%;
   }
 }
 
