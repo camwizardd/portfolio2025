@@ -43,7 +43,6 @@ p {
 ::selection {
   background-color: #000;
   color: var(--white);
-  -webkit-animation-fill-mode: var(--white);
 }
 
 // A REPLACER A QLQ PART
@@ -75,8 +74,20 @@ p {
   transform: skewY(15deg);
 }
 
+.hover2 {
+  transition: transform 0.3s ease;
+}
+
 .hover2:hover {
   transform: skewY(-15deg);
+}
+
+.title-svg {
+  transition: transform 0.3s ease;
+}
+
+.title-svg:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 768px) {

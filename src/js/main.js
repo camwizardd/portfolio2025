@@ -6,6 +6,37 @@ import { InertiaPlugin } from "gsap/InertiaPlugin";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, Draggable, InertiaPlugin);
 
+// ============================================================
+// LOADING PAGE ANIMATION
+// ============================================================
+
+window.addEventListener("load", function () {
+  const loadingPage = document.querySelector(".loading-page");
+  const loadingCat = document.querySelector(".loading-cat");
+
+  // Animation de rotation du chat avec GSAP
+  gsap.to(loadingCat, {
+    rotation: 360,
+    duration: 1,
+    repeat: -1,
+    ease: "linear",
+  });
+
+  // Cache la loading page après 2 secondes
+  setTimeout(() => {
+    gsap.to(loadingPage, {
+      y: "-100%",
+      duration: 0.5,
+      ease: "power3.in",
+      ease: "power3.in",
+
+      onComplete: () => {
+        loadingPage.style.display = "none";
+      },
+    });
+  }, 1000); // Ajuste la durée selon tes besoins
+});
+
 document.addEventListener("DOMContentLoaded", function () {
   // ============================================================
   // BURGER MENU
@@ -171,6 +202,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     el.addEventListener("mouseleave", () => fade.reverse());
   });
+
+  // ============================================================
+  // TEXT ANIMATION
+  // ============================================================
+
+  const titles = document.querySelectorAll(".title");
+  const numTitles = titles.length;
+  const moveAmount = 50;
+  const transitionDuration = 0.3;
+
+  const tl = gsap.timeline({ repeat: -1, yoyo: true });
+
+  for (var i = 0; i < numTitles; i++) {
+    tl.to(titles, {
+      y: i * moveAmount * -1,
+      duration: transitionDuration,
+      ease: "power2.inOut",
+    });
+    if (i == 1) {
+      tl.add(() => {}, "+=3");
+    } else {
+      tl.add(() => {}, "+=1.5");
+    }
+  }
 
   // ============================================================
   // EFFECT 000 - HOVER IMAGES AVEC INERTIA (DESKTOP UNIQUEMENT)

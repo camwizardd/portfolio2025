@@ -1,5 +1,5 @@
 // ============================================================
-// PROJECT MAIN - BASE (MOBILE FIRST)
+// PROJECT MAIN - MOBILE
 // ============================================================
 
 .project-main {
@@ -74,12 +74,12 @@
 }
 
 // ============================================================
-// DESKTOP (≥768px)
+// DESKTOP
 // ============================================================
 
 @media (min-width: 768px) {
   .project-main {
-    padding: 200px 250px 0 300px;
+    padding: 200px 250px 100px 300px;
   }
 
   .mobileimg {
@@ -134,7 +134,7 @@
   }
 
   .project-infos {
-    width: 520px;
+    width: 620px;
   }
 
   .project-new-desktop-icon {

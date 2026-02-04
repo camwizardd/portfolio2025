@@ -1,0 +1,27 @@
+// ============================================================
+// LOADING PAGE
+// ============================================================
+
+.loading-page {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100001;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform;
+}
+
+.loading-cat {
+  width: 150px;
+  height: 150px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
