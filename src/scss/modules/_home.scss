@@ -7,12 +7,21 @@
   .home-guy-text-indicator {
     display: flex;
     align-items: end;
+    gap: 20px;
+  }
+  .home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .home-silly-guy {
+    width: 100%;
   }
   .home-arrow-wrapper {
-    width: 10%;
     display: flex;
     justify-content: end;
-    padding-bottom: 10px;
   }
   .home-text-container {
     width: 100%;
@@ -38,14 +47,6 @@
 }
 
 @media (max-width: 768px) {
-  .home-text-desktop {
-    display: none;
-  }
-
-  .home-text-container {
-    position: absolute;
-    opacity: 0;
-  }
   .home-guy-text-indicator {
     justify-content: center;
     gap: 20px;
