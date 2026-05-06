@@ -7,7 +7,10 @@
   gap: 19px;
   .about-img {
     img {
-      width: 500px;
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      display: block;
     }
   }
 }
@@ -63,10 +66,6 @@
 }
 
 @media (min-width: 768px) {
-  .about-img {
-    min-width: 30%;
-    max-width: 40%;
-  }
   .about-main {
     height: 100vh;
     display: flex;

@@ -39,7 +39,7 @@ window.addEventListener("load", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   // ============================================================
-  // BURGER MENU
+  // BURGER MENU + NEW ICON ANIMATION
   // ============================================================
 
   const burger = document.querySelector(".header-burger");
@@ -51,11 +51,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   burger.addEventListener("click", toggleMenu);
 
-  gsap.to(".header-burger", {
+  gsap.to(".header-burger, .project-new-desktop-icon", {
     repeat: -1,
     duration: 10,
     delay: 0,
     rotation: -360,
+    ease: "none",
+  });
+
+  gsap.to(".project-new-mobile-icon", {
+    repeat: -1,
+    duration: 2,
+    delay: 0,
+    rotation: -360,
+    ease: "none",
   });
 
   // ============================================================
